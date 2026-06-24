@@ -1,0 +1,375 @@
+{
+    "extensions": [
+        {
+            "namespace": "Berry\\Html",
+            "class": [
+                "HtmlTag",
+                "HtmlVoidTag"
+            ],
+            "methods": [
+                {
+                    "name": "xData",
+                    "doc": "Declares Alpine component state",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|string|\\Stringable",
+                            "name": "data"
+                        }
+                    ]
+                },
+                {
+                    "name": "xInit",
+                    "doc": "Runs an expression when Alpine initializes this element",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xShow",
+                    "doc": "Shows or hides this element based on an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xBind",
+                    "doc": "Binds an attribute to an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string",
+                            "name": "attribute"
+                        },
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xBindClass",
+                    "doc": "Binds the class attribute to an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xBindStyle",
+                    "doc": "Binds the style attribute to an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xBindKey",
+                    "doc": "Binds a key for repeated template items",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOn",
+                    "doc": "Listens for an event and runs an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string",
+                            "name": "event"
+                        },
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnClick",
+                    "doc": "Listens for click events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnClickOutside",
+                    "doc": "Listens for clicks outside this element",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnSubmit",
+                    "doc": "Listens for submit events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnInput",
+                    "doc": "Listens for input events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnChange",
+                    "doc": "Listens for change events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnKeydown",
+                    "doc": "Listens for keydown events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnKeydownEnter",
+                    "doc": "Listens for enter keydown events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnKeydownEscape",
+                    "doc": "Listens for escape keydown events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnKeyup",
+                    "doc": "Listens for keyup events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnKeyupEnter",
+                    "doc": "Listens for enter keyup events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xOnKeyupEscape",
+                    "doc": "Listens for escape keyup events",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xText",
+                    "doc": "Sets text content from an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xHtml",
+                    "doc": "Sets HTML content from an expression",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xModel",
+                    "doc": "Binds form input state to data",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xModelable",
+                    "doc": "Exposes a property for x-model on the component",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xFor",
+                    "doc": "Repeats template contents for each item in a collection",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xTransition",
+                    "doc": "Adds transition helpers or custom transition stages",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|null",
+                            "name": "suffix",
+                            "defaultValue": "null"
+                        },
+                        {
+                            "type": "string|\\Stringable|null",
+                            "name": "expression",
+                            "defaultValue": "null"
+                        }
+                    ]
+                },
+                {
+                    "name": "xEffect",
+                    "doc": "Runs an expression when its dependencies change",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xIgnore",
+                    "doc": "Prevents Alpine from initializing this element or descendants",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
+                        }
+                    ]
+                },
+                {
+                    "name": "xRef",
+                    "doc": "Registers a reference name for this element",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xCloak",
+                    "doc": "Hides uninitialized Alpine content",
+                    "returns": "static",
+                    "args": []
+                },
+                {
+                    "name": "xTeleport",
+                    "doc": "Teleports template contents to another part of the document",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xIf",
+                    "doc": "Conditionally renders template contents",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
+                            "name": "expression"
+                        }
+                    ]
+                },
+                {
+                    "name": "xId",
+                    "doc": "Declares generated id names for this scope",
+                    "returns": "static",
+                    "args": [
+                        {
+                            "type": "array<mixed>|string|\\Stringable",
+                            "name": "names"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

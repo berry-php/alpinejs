@@ -1,0 +1,44 @@
+{
+    "name": "berry/alpinejs",
+    "description": "Alpine.js extension for berry/html",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Kaster",
+            "email": "me@atomicptr.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Berry\\AlpineJs\\": "src/"
+        },
+        "files": [
+            "src/bootstrap.php"
+        ]
+    },
+    "require": {
+        "berry/html": ">=0.14",
+        "berry/extension-method-stub-generator": ">=0.2"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.7",
+        "phpstan/phpstan": "^2.2",
+        "phpstan/phpstan-deprecation-rules": "^2.0"
+    },
+    "scripts": {
+        "test": "php vendor/bin/pest",
+        "coverage": "XDEBUG_MODE=coverage php vendor/bin/pest --coverage"
+    },
+    "scripts-aliases": {
+        "test": [
+            "pest"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "berry/extension-method-stub-generator": true
+        }
+    }
+}
