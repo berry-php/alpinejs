@@ -14,7 +14,8 @@
                     "args": [
                         {
                             "type": "array<mixed>|string|\\Stringable",
-                            "name": "data"
+                            "name": "data",
+                            "defaultValue": "'{}'"
                         }
                     ]
                 },
@@ -26,6 +27,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -37,12 +43,17 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
                 {
                     "name": "xBind",
-                    "doc": "Binds an attribute to an expression",
+                    "doc": "Binds an attribute to an expression, or applies an object of bindings with one argument",
                     "returns": "static",
                     "args": [
                         {
@@ -50,8 +61,14 @@
                             "name": "attribute"
                         },
                         {
-                            "type": "array<mixed>|bool|float|int|string|\\Stringable",
-                            "name": "expression"
+                            "type": "array<mixed>|bool|float|int|string|\\Stringable|null",
+                            "name": "expression",
+                            "defaultValue": "null"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -63,6 +80,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -74,6 +96,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -85,6 +112,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -99,7 +131,13 @@
                         },
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -110,7 +148,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -121,7 +165,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -132,7 +182,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -143,7 +199,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -154,7 +216,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -165,7 +233,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -176,7 +250,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -187,7 +267,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -198,7 +284,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -209,7 +301,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -220,7 +318,13 @@
                     "args": [
                         {
                             "type": "string|\\Stringable",
-                            "name": "expression"
+                            "name": "expression",
+                            "defaultValue": "''"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -232,6 +336,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -243,6 +352,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -254,6 +368,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -265,6 +384,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -276,6 +400,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -304,6 +433,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -327,6 +461,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -344,6 +483,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },
@@ -355,6 +499,11 @@
                         {
                             "type": "array<mixed>|bool|float|int|string|\\Stringable",
                             "name": "expression"
+                        },
+                        {
+                            "type": "string|null",
+                            "name": "modifier",
+                            "defaultValue": "null"
                         }
                     ]
                 },

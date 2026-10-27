@@ -1,6 +1,6 @@
 # Berry Alpine.js
 
-[Alpine.js](https://alpinejs.dev/) extension for [berry/html](https://github.com/atomicptr/berry)
+[Alpine.js](https://alpinejs.dev/) v3.17+ extension for [berry/html](https://github.com/atomicptr/berry)
 
 ## Usage
 
@@ -23,10 +23,10 @@ function renderCounter(): Element
 {
     return div()
         ->xData(['count' => 0])
-        ->children(
+        ->children([
             button()->xOnClick('count++')->text('Increment'),
             span()->xText('count'),
-        );
+        ]);
 }
 ```
 
@@ -42,10 +42,10 @@ function renderDropdown(): Element
 {
     return div()
         ->xData(['open' => false])
-        ->children(
+        ->children([
             button()->xOnClick('open = ! open')->text('Toggle'),
             div()->xShow('open')->xOnClickOutside('open = false')->text('Contents...'),
-        );
+        ]);
 }
 ```
 
