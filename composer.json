@@ -20,7 +20,7 @@
     "require": {
         "php": ">=8.3",
         "berry/html": ">=0.16",
-        "berry/extension-method-stub-generator": ">=0.2"
+        "berry/extension-method-stub-generator": ">=0.3"
     },
     "require-dev": {
         "pestphp/pest": "^4.7",
